@@ -742,3 +742,9 @@ h2 {
     transform: rotate(0deg);
   }
 }
+
+@media (max-width: 400px) {
+  body {
+    margin-left: 10px;
+  }
+}
