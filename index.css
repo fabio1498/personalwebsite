@@ -657,4 +657,7 @@ body {
     text-transform: uppercase;
     flex-wrap: wrap;
   }
+    #avatar {
+    width: 300px;
+  }
 }
