@@ -32,6 +32,7 @@ body {
 }
 .content1 a {
   text-decoration: none;
+  color: black;
 }
 #avatar {
   width: 420px;
@@ -39,9 +40,10 @@ body {
   border-top-right-radius: 10px;
 }
 #qrcode {
-  width: 100px;
+  width: 80px;
   float: right;
   margin-right: 10px;
+  border-radius: 10px;
 }
 #info {
   background-color: rgb(235, 235, 235);
@@ -89,7 +91,6 @@ body {
 
 #freecodecamp {
   width: 40px;
-  margin-right: 10px;
   border-radius: 4px;
   font-size: 12px;
   padding: 4px;
@@ -114,6 +115,16 @@ body {
   color: rgb(0, 0, 0);
   min-height: 100vh;
 }
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .portfolioelements {
   display: flex;
   flex-direction: row;
@@ -123,14 +134,29 @@ body {
   flex-wrap: wrap;
   padding: 10px;
   border-radius: 10px;
-  max-width: 100%;
+  max-width: 40%;
+  justify-content: space-around;
+}
+.portfolioelements2 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px rgba(26, 26, 26, 0.13);
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 40%;
   justify-content: space-around;
 }
 .element {
-  background: linear-gradient(180deg, #6d4e0a3a, #494949);
+  background: linear-gradient(180deg, #e6d227, #ca7615);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -139,7 +165,6 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
   color: white;
 }
 .element img {
@@ -154,11 +179,12 @@ body {
   background: linear-gradient(180deg, #004883, #e32934);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
   padding: 4px;
+  padding-bottom: 8px;
   backdrop-filter: blur (10px);
   font-size: 20px;
   text-align: center;
@@ -175,10 +201,10 @@ body {
   transition: 0.2s ease-in-out;
 }
 .elementapple {
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
-  background: linear-gradient(180deg, #000000, #353535);
+  background: linear-gradient(180deg, #00833b, #0e9747);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -186,7 +212,6 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
   color: white;
 }
 .elementapple img {
@@ -198,10 +223,10 @@ body {
   transition: 0.2s ease-in-out;
 }
 .elementdocumentation {
-  background: linear-gradient(180deg, #a09972, #f3ef7e);
+  background: linear-gradient(180deg, #2d8ee9, #0e9797);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -210,7 +235,6 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
   color: white;
 }
 .elementdocumentation img {
@@ -222,10 +246,10 @@ body {
   transition: 0.2s ease-in-out;
 }
 .elementwiki {
-  background: linear-gradient(180deg, #ffffff, #777777);
+  background: linear-gradient(180deg, #2de97b, #0e973c);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -234,7 +258,6 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: 500;
-  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
   color: white;
 }
 .elementwiki img {
@@ -249,7 +272,7 @@ body {
   background: linear-gradient(180deg, #ff4800, #f74ada, cyan);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -269,11 +292,24 @@ body {
   transform: scale(1.06);
   transition: 0.2s ease-in-out;
 }
+.portfolioelementsuiux {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 10px rgba(26, 26, 26, 0.13);
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 100%;
+  justify-content: space-around;
+}
+
 .elementfigma {
   background: linear-gradient(180deg, #69e638, #40bd70);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 1px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -317,7 +353,7 @@ body {
   background: linear-gradient(180deg, #fa8907, #1c449b);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 1px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -340,7 +376,7 @@ body {
   background: linear-gradient(180deg, #292929, #000000);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 2px 4px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 1px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
@@ -493,13 +529,9 @@ body {
   margin-bottom: 10px;
   border-radius: 100%;
 }
-.card .dataemail {
-  background-color: white;
-
-  box-shadow: 4px 2px 20px rgba(104, 104, 104, 0.274);
-  border-radius: 10px;
-  padding: 4px;
-  width: 240px;
+.dataemail:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(0.98);
 }
 .card .dataphone {
   background-color: white;
@@ -517,21 +549,6 @@ body {
   padding: 4px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-#emailpulse {
-  animation: pulse 1s ease-in-out infinite;
-  display: inline-block;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 @keyframes AnimationName {
@@ -657,7 +674,7 @@ body {
     text-transform: uppercase;
     flex-wrap: wrap;
   }
-    #avatar {
+  #avatar {
     width: 400px;
   }
 }
