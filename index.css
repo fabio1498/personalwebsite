@@ -20,7 +20,7 @@ body {
   min-height: 100vh;
 }
 .content1 {
-  background-color: rgba(253, 253, 253, 0.8);
+  background-color: rgba(243, 243, 243, 0.8);
   backdrop-filter: blur (10px);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.466);
   border-radius: 10px;
@@ -36,8 +36,9 @@ body {
 }
 #avatar {
   width: 420px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
 }
 #qrcode {
   width: 80px;
@@ -46,17 +47,18 @@ body {
   border-radius: 10px;
 }
 #info {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-weight: 500;
   padding-top: 4px;
   padding-left: 4px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding-right: 4px;
+  border-radius: 10px;
   padding-bottom: 10px;
+  margin-top: 10px;
 }
 #instagram {
-  margin-right: 10px;
+  margin-right: 4px;
   text-decoration: none;
   color: rgb(240, 240, 240);
   background: linear-gradient(270deg, #ffee00, #ff5100, #5715f0);
@@ -66,9 +68,15 @@ body {
   font-size: 12px;
   animation: cgcolors 4s ease-in-out infinite;
 }
+#instagram img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: 2px;
+}
 #linkedin {
   width: 30px;
-  margin-right: 10px;
+  margin-right: 4px;
   font-size: 12px;
   padding: 4px;
   background: linear-gradient(270deg, #1f50d8, #1682ad);
@@ -77,18 +85,29 @@ body {
   border-radius: 4px;
   animation: cgcolors 4s ease-in-out infinite;
 }
-#twitter {
+#linkedin img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: 2px;
+}
+#instagramui {
   width: 30px;
-  margin-right: 10px;
+  margin-right: 4px;
   border-radius: 6px;
   font-size: 12px;
   padding: 4px;
-  background: linear-gradient(270deg, #00c3ff, #006eff);
+  background: linear-gradient(270deg, #bdb108, #973508, #400eb6);
   color: white;
   background-size: 600% 600%;
   animation: cgcolors 4s ease-in-out infinite;
 }
-
+#instagramui img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: 2px;
+}
 #freecodecamp {
   width: 40px;
   border-radius: 4px;
@@ -98,9 +117,15 @@ body {
   color: white;
   background-size: 600% 600%;
 }
+#freecodecamp img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: 2px;
+}
 #codepen {
   width: 30px;
-  margin-right: 10px;
+  margin-right: 4px;
   font-size: 12px;
   padding: 4px;
   background: linear-gradient(270deg, #46a51a, #36606d);
@@ -108,6 +133,12 @@ body {
   background-size: 600% 600%;
   border-radius: 4px;
   animation: cgcolors 4s ease-in-out infinite;
+}
+#codepen img {
+  width: 20px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+  margin-right: 2px;
 }
 
 #portfolio {
@@ -215,7 +246,7 @@ body {
   color: white;
 }
 .elementapple img {
-  width: 40px;
+  width: 30px;
   vertical-align: middle;
 }
 .elementapple:hover {
@@ -292,6 +323,59 @@ body {
   transform: scale(1.06);
   transition: 0.2s ease-in-out;
 }
+
+.elementlogin {
+  background: linear-gradient(180deg, #d12a46, #fa542a);
+  background-size: 600% 600%;
+  animation: AnimationName 10s ease infinite;
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 4px;
+  padding-bottom: 8px;
+  backdrop-filter: blur (10px);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
+  color: white;
+}
+.elementlogin img {
+  width: 40px;
+  vertical-align: middle;
+}
+.elementlogin:hover {
+  transform: scale(1.06);
+  transition: 0.2s ease-in-out;
+}
+
+.elementregister {
+  background: linear-gradient(180deg, #10129c, #3446aa);
+  background-size: 600% 600%;
+  animation: AnimationName 10s ease infinite;
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 4px;
+  padding-bottom: 8px;
+  backdrop-filter: blur (10px);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
+  color: white;
+}
+.elementregister img {
+  width: 40px;
+  vertical-align: middle;
+}
+.elementregister:hover {
+  transform: scale(1.06);
+  transition: 0.2s ease-in-out;
+}
+
 .portfolioelementsuiux {
   display: flex;
   flex-direction: row;
@@ -315,7 +399,7 @@ body {
   border-radius: 10px;
   padding: 4px;
   backdrop-filter: blur (10px);
-  text-shadow: 4px 2px 10px rgba(0, 0, 0, 0.219);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   font-size: 16px;
   text-align: center;
   font-weight: 500;
@@ -350,17 +434,17 @@ body {
   transition: 0.2s ease-in-out;
 }
 .elementbuy {
-  background: linear-gradient(180deg, #fa8907, #1c449b);
+  background: linear-gradient(180deg, #0799fa, #1c449b);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 4px 1px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
   padding: 4px;
   backdrop-filter: blur (10px);
   text-shadow: 4px 2px 20px black;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   font-weight: 500;
   color: white;
@@ -373,17 +457,17 @@ body {
   transition: 0.2s ease-in-out;
 }
 .elementtest {
-  background: linear-gradient(180deg, #292929, #000000);
+  background: linear-gradient(180deg, #6d7bf5, #40078a);
   background-size: 600% 600%;
   animation: AnimationName 10s ease infinite;
-  box-shadow: 0px 4px 1px rgba(26, 26, 26, 0.836);
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
   width: 200px;
   height: 200px;
   border-radius: 10px;
   padding: 4px;
   backdrop-filter: blur (10px);
   text-shadow: 4px 2px 20px black;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   font-weight: 500;
   color: white;
@@ -392,6 +476,30 @@ body {
   width: 100px;
 }
 .elementtest:hover {
+  transform: scale(1.06);
+  transition: 0.2s ease-in-out;
+}
+
+.elementtest2 {
+  background: linear-gradient(180deg, #dfe2ff, #c71616);
+  background-size: 600% 600%;
+  animation: AnimationName 10s ease infinite;
+  box-shadow: 0px 4px 4px rgba(26, 26, 26, 0.836);
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 4px;
+  backdrop-filter: blur (10px);
+  text-shadow: 4px 2px 20px black;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+.elementtest2 img {
+  width: 100px;
+}
+.elementtest2:hover {
   transform: scale(1.06);
   transition: 0.2s ease-in-out;
 }
